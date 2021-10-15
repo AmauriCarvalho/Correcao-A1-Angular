@@ -1,0 +1,9 @@
+<h2>Carteira</h2>
+<h3>Operações de compra e venda em reais</h3>
+R$ <input #valorbrl type="number" value="50">
+<button (click)="wallet.addBitCoins(+valorbrl.value)">Comprar</button>
+<button (click)="wallet.addBitCoins(-valorbrl.value)">Vender</button>
+<h3>Saldo: <u>{{wallet.bitCoins}} BTC</u></h3>
+<h4><u>{{wallet.getBtcInBRL()}} BRL</u></h4>
+<h4><u>{{wallet.getBtcInUSD()}} USD</u></h4>
+<h4><u>{{wallet.getBtcInEUR()}} EUR</u></h4>

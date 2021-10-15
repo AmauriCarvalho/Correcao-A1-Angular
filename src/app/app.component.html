@@ -1,0 +1,11 @@
+<h1>AmauriApp</h1>
+<a [routerLink]="['/currency']">Cotações</a> |
+<a [routerLink]="['/wallet']">Carteira </a> 
+<span *ngIf="wallet.diff>0" style="color:green">↑</span>
+<span *ngIf="wallet.diff<0" style="color:red">↓</span>
+<hr>
+<router-outlet></router-outlet>
+<hr>
+Nome: Amauri do Espirito Santo Carvalho<br>
+RA: 0050831921042<br>
+<a href="https://github.com/AmauriCarvalho">GitHub</a>
